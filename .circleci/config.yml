@@ -1,0 +1,11 @@
+version: 2.1
+
+orbs:
+  cypress: cypress-io/cypress@6.1.0
+
+workflows:
+  cypress:
+    jobs:
+      - cypress/run:
+          node-version: 22.15.0
+          cypress-command: 'npm run cypress:record -- --config "{ \"projectId\": \"4gj6pa\" }"'
