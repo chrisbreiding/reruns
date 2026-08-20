@@ -1,0 +1,25 @@
+{
+  "name": "reruns",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:record": "cypress run --record",
+
+    "cypress:record:rerun": "CYPRESS_RERUN_GROUP_ID=3 CYPRESS_INTERNAL_ENV=development cypress run --record",
+    "cypress:record1": "CYPRESS_FAIL_COUNT=7 npm run cypress:record:rerun",
+    "cypress:record2": "CYPRESS_FAIL_COUNT=6 npm run cypress:record:rerun",
+    "cypress:record3": "CYPRESS_FAIL_COUNT=5 npm run cypress:record:rerun",
+    "cypress:record4": "CYPRESS_FAIL_COUNT=4 npm run cypress:record:rerun",
+    "cypress:record5": "CYPRESS_FAIL_COUNT=3 npm run cypress:record:rerun",
+    "cypress:record6": "CYPRESS_FAIL_COUNT=2 npm run cypress:record:rerun",
+    "cypress:record7": "CYPRESS_FAIL_COUNT=1 npm run cypress:record:rerun",
+    "cypress:record8": "CYPRESS_FAIL_COUNT=0 npm run cypress:record:rerun"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "15.21.0"
+  }
+}
